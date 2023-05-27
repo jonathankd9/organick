@@ -1,2 +1,0 @@
-# organick
- An agriculture website
