@@ -6,6 +6,11 @@ module.exports = {
 			colors: {
 				primary: "#274C5B",
 				secondary: "#7EB693",
+				accent: "#EFD372",
+				muted: "#D4D4D4",
+				pastel: "#F9F8F8",
+				neutral: "#EFF6F1",
+				metallic: "#525C60",
 			},
 			container: {
 				padding: {
