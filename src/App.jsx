@@ -1,12 +1,13 @@
 import React from "react";
-import { Home } from "./components";
+import { Home } from "./containers";
+import "./App.css";
 
 const App = () => {
-  return (
-    <div>
-      <Home />
-    </div>
-  );
+	return (
+		<div>
+			<Home />
+		</div>
+	);
 };
 
 export default App;

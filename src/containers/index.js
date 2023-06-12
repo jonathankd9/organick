@@ -11,4 +11,3 @@ export { default as Portfolio } from "./Portfolio";
 export { default as Service } from "./Service";
 export { default as ShopSingle } from "./ShopSingle";
 export { default as Team } from "./Team";
-
