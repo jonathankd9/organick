@@ -12,10 +12,10 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
+	font-family: "Open Sans", sans-serif;
 }
 
 a {
-	font-weight: 700;
 	color: #274c5b;
 	text-decoration: inherit;
 }
@@ -33,6 +33,18 @@ h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 3.125em;
 	line-height: 3.6875em;
+	color: #274c5b;
+}
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.875em;
+	line-height: 2.1875em;
+	color: #274c5b;
+}
+h4 {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5625em;
+	line-height: 1.8125em;
 	color: #274c5b;
 }
 p {

@@ -3,10 +3,12 @@ import { Navbar, Footer, Newsletter } from "./../components";
 
 const Home = () => {
 	return (
-		<div>
+		<div className="container">
 			{/* Navbar */}
 			<Navbar />
-			<h1>Hello World</h1>
+			<div className="container">
+				<h1>Hello World</h1>
+			</div>
 			{/* Footer */}
 			<Footer />
 		</div>
