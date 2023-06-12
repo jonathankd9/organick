@@ -1,16 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
-
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
+	background-color: white;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -19,8 +15,8 @@
 }
 
 a {
-	font-weight: 500;
-	color: #646cff;
+	font-weight: 700;
+	color: #274c5b;
 	text-decoration: inherit;
 }
 a:hover {
@@ -36,20 +32,37 @@ body {
 }
 
 h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+	font-family: "Roboto", sans-serif;
+	font-size: 4.375em;
+	line-height: 5.125em;
+	color: #274c5b;
+}
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 3.125em;
+	line-height: 3.6875em;
+	color: #274c5b;
+}
+p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.125em;
+	font-weight: 400;
+	color: #525c60;
 }
 
 button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
+	font-size: 1.25em;
+	font-weight: 700;
+	font-family: "Roboto", sans-serif;
 	cursor: pointer;
-	transition: border-color 0.25s;
+	justify-content: center;
+	align-items: center;
+	padding: 1.75em 2.4375em;
+	gap: 10px;
+	width: 213.75em;
+	height: 4.9375em;
+	background-color: #274c5b;
+	border-radius: 1em;
 }
 button:hover {
 	border-color: #646cff;
