@@ -3,7 +3,10 @@ module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
-			colors: {},
+			colors: {
+				primary: "#274C5B",
+				secondary: "#7EB693",
+			},
 			container: {
 				padding: {
 					DEFAULT: "1rem",
