@@ -6,6 +6,7 @@ const Home = () => {
 			{/* Navbar */}
 
 			<h1>Hello World</h1>
+
 			{/* Footer */}
 		</div>
 	);
