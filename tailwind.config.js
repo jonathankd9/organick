@@ -20,8 +20,6 @@ module.exports = {
 					xl: "5rem",
 					"2xl": "6rem",
 				},
-				center: true,
-				width: "87.5rem",
 			},
 		},
 	},
