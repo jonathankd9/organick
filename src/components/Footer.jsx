@@ -40,8 +40,8 @@ const Footer = () => {
 							<div
 								className=""
 								style={{
-									width: 60,
-									height: 60,
+									width: "3.75em",
+									height: "3.75em",
 									color: "#274C5B",
 									backgroundColor: "#EFF6F1",
 									borderRadius: 50,
@@ -55,8 +55,8 @@ const Footer = () => {
 							<div
 								className=""
 								style={{
-									width: 60,
-									height: 60,
+									width: "3.75em",
+									height: "3.75em",
 									color: "#274C5B",
 									backgroundColor: "#EFF6F1",
 									borderRadius: 50,
@@ -70,8 +70,8 @@ const Footer = () => {
 							<div
 								className=""
 								style={{
-									width: 60,
-									height: 60,
+									width: "3.75em",
+									height: "3.75em",
 									color: "#274C5B",
 									backgroundColor: "#EFF6F1",
 									borderRadius: 50,
@@ -85,8 +85,8 @@ const Footer = () => {
 							<div
 								className=""
 								style={{
-									width: 60,
-									height: 60,
+									width: "3.75em",
+									height: "3.75em",
 									color: "#274C5B",
 									backgroundColor: "#EFF6F1",
 									borderRadius: 50,
