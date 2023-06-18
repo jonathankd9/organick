@@ -104,19 +104,19 @@ const Footer = () => {
 					<div className="px-10">
 						<h3 className="md:mb-2 md:text-left">Utility Pages</h3>
 						<div className=" md:flex md:flex-col ">
-							<div className="mb-5 md:text-left">
+							<div className="mb-5 md:text-left sm:text-[18px]">
 								<a href="">Style Guide</a>
 							</div>
-							<div className="mb-5 md:text-left">
+							<div className="mb-5 md:text-left sm:text-[18px]">
 								<a href="">404 Not Found</a>
 							</div>
-							<div className="mb-5 md:text-left">
+							<div className="mb-5 md:text-left sm:text-[18px]">
 								<a href="">Password Protected</a>
 							</div>
-							<div className="mb-5 md:text-left">
+							<div className="mb-5 md:text-left sm:text-[18px]">
 								<a href="">Licenses</a>
 							</div>
-							<div className="mb-5 md:text-left">
+							<div className="mb-5 md:text-left sm:text-[18px]">
 								<a href="">Changelog</a>
 							</div>
 						</div>
