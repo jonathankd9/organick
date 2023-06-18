@@ -7,11 +7,11 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 
 const Footer = () => {
 	return (
-		<div>
+		<div className="">
 			<div className="container">
-				<div className="grid grid-cols-3 pb-20 divide-x">
+				<div className="md:grid md:grid-cols-3 md:pb-20 md:divide-x md:divide-y-0 sm:flex sm:flex-col sm:divide-y sm:divide-x-0 sm:text-center ">
 					{/* Contact us */}
-					<div className="text-right px-10">
+					<div className="md:text-right px-10 ">
 						<h3 className="mb-2">Contact Us</h3>
 						{/* Email */}
 						<div className="mb-5">
@@ -29,14 +29,14 @@ const Footer = () => {
 						</div>
 					</div>
 					{/* Logo Section */}
-					<div className="flex flex-col items-center px-5">
-						<img className="mb-3" src={Logo} alt="" />
+					<div className="md:flex md:flex-col md:items-center md:px-5 sm:flex sm:flex-col sm:justify-center">
+						<img className="md:mb-3 sm:object-scale-down" src={Logo} alt="" />
 						<p className="text-center">
 							Simply dummy text of the printing and typesetting industry. Lorem
 							Ipsum simply dummy text of the printing{" "}
 						</p>
 						{/* Social media logos */}
-						<div className="flex gap-2 py-4">
+						<div className="flex gap-2 py-4 justify-center">
 							<div
 								className=""
 								style={{
@@ -102,21 +102,21 @@ const Footer = () => {
 
 					{/* Utility pages */}
 					<div className="px-10">
-						<h3 className="mb-2">Utility Pages</h3>
-						<div className="flex flex-col">
-							<div className="mb-5">
+						<h3 className="md:mb-2 md:text-left">Utility Pages</h3>
+						<div className=" md:flex md:flex-col ">
+							<div className="mb-5 md:text-left">
 								<a href="">Style Guide</a>
 							</div>
-							<div className="mb-5">
+							<div className="mb-5 md:text-left">
 								<a href="">404 Not Found</a>
 							</div>
-							<div className="mb-5">
+							<div className="mb-5 md:text-left">
 								<a href="">Password Protected</a>
 							</div>
-							<div className="mb-5">
+							<div className="mb-5 md:text-left">
 								<a href="">Licenses</a>
 							</div>
-							<div className="mb-5">
+							<div className="mb-5 md:text-left">
 								<a href="">Changelog</a>
 							</div>
 						</div>

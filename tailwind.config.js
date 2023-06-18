@@ -2,6 +2,16 @@
 module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
+		screens: {
+			sm: "440px",
+			// => @media (min-width: 640px) { ... }
+
+			md: "1024px",
+			// => @media (min-width: 1024px) { ... }
+
+			desktop: "1280px",
+			// => @media (min-width: 1280px) { ... }
+		},
 		extend: {
 			colors: {
 				primary: "#274C5B",
@@ -15,11 +25,12 @@ module.exports = {
 			container: {
 				padding: {
 					DEFAULT: "1rem",
-					sm: "2rem",
+					sm: "1rem",
 					lg: "4rem",
 					xl: "5rem",
 					"2xl": "6rem",
 				},
+				center: true,
 			},
 		},
 	},
