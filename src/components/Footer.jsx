@@ -8,7 +8,7 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 const Footer = () => {
 	return (
 		<div className="">
-			<div className="container sm:w-full">
+			<div className="container sm:w-full sm:px-0">
 				<div className="md:grid md:grid-cols-3 md:pb-20 md:divide-x md:divide-y-0 sm:flex sm:flex-col sm:divide-y sm:divide-x-0 sm:text-center ">
 					{/* Contact us */}
 					<div className="md:text-right px-10 ">
