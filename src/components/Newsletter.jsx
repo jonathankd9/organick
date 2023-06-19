@@ -3,7 +3,7 @@ import React from "react";
 const Newsletter = () => {
 	return (
 		<div>
-			<div className="container md:grid md:grid-cols-2 md:items-center sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 bg-[url('/src/assets/newsletter/subscribe-bg.jpg')] my-10 p-14 rounded-2xl	">
+			<div className="container md:grid md:grid-cols-2 md:items-center sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 bg-[url('/src/assets/newsletter/subscribe-bg.jpg')] bg-cover my-10 md:px-16 md:py-20 sm:py-10 rounded-2xl">
 				<div className="flex-initial">
 					<h2 className="text-white font-bold leading-none md:text-[50px] md:text-left sm:text-[32px] sm:text-center">
 						Subscribe to <br /> our Newsletter
