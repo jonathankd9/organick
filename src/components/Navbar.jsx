@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="md:flex justify-between items-center py-2">
       <div>
-        <img src={logo} alt="organick-logo" />
+        <img src={logo} alt="organick-logo" className="w-max" />
       </div>
       <div className="md:flex gap-4 items-center">
         {NavData.map((element) => {
