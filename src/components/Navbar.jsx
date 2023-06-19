@@ -8,11 +8,11 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Navbar = () => {
   return (
-    <nav className="md:flex justify-between items-center py-2">
+    <nav className="md:flex justify-between items-center py-6">
       <div>
         <img src={logo} alt="organick-logo" className="w-max" />
       </div>
-      <div className="md:flex gap-4 items-center">
+      <div className="md:flex gap-4 items-center font-medium">
         {NavData.map((element) => {
           return (
             <NavLink to={element.link} key={element.id}>
@@ -21,7 +21,7 @@ const Navbar = () => {
           );
         })}
       </div>
-      <div className="md:flex gap-4 items-center">
+      <div className="md:flex gap-4 items-center font-medium">
         <div className="bg-secondary p-2 rounded-full">
           <SearchIcon className="text-pastel" />
         </div>
