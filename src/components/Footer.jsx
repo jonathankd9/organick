@@ -11,7 +11,7 @@ const Footer = () => {
 			<div className="container sm:w-full sm:px-0">
 				<div className="md:grid md:grid-cols-3 md:pb-20 md:divide-x md:divide-y-0 sm:flex sm:flex-col sm:divide-y sm:divide-x-0 sm:text-center ">
 					{/* Contact us */}
-					<div className="md:text-right px-10 sm:px-0 ">
+					<div className="md:text-right md:pr-10 sm:px-0 ">
 						<h3 className="mb-2">Contact Us</h3>
 						{/* Email */}
 						<div className="mb-5">

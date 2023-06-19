@@ -61,11 +61,9 @@ button {
 	cursor: pointer;
 	justify-content: center;
 	align-items: center;
-	padding: 1.75em 2.4375em;
-	gap: 10px;
-	width: 213.75em;
-	height: 4.9375em;
 	background-color: #274c5b;
+	padding: 1em 3em;
+	color: white;
 	border-radius: 1em;
 }
 button:hover {

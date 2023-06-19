@@ -12,6 +12,10 @@ module.exports = {
 			desktop: "1280px",
 			// => @media (min-width: 1280px) { ... }
 		},
+		backgroundImage: {
+			"newletter-back": "url('/src/assets/newsletter/subscribe-bg.jpg')",
+			"footer-texture": "url('/img/footer-texture.png')",
+		},
 		extend: {
 			colors: {
 				primary: "#274C5B",
