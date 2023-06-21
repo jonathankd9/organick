@@ -23,6 +23,8 @@ const App = () => {
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
     </React.Fragment>
   );
