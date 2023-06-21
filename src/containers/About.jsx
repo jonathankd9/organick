@@ -3,6 +3,12 @@ import { Navbar, Footer, Newsletter } from "./../components";
 import { WwoyData } from "./../components/data/WwoyData";
 
 const About = () => {
+  const filteredData = WwoyData.filter((wwoy) => {
+    if (wwoy.id === 1 || wwoy.id === 3) {
+      return true;
+    }
+  });
+
   return (
     <>
       {/* Navbar  */}
@@ -15,7 +21,7 @@ const About = () => {
             <h2 className="text-white mb-5">What We Offer for You</h2>
           </div>
           <div className="flex flex-wrap gap-5 sm:justify-center">
-            {WwoyData.map((wwoy) => (
+            {filteredData.map((wwoy) => (
               <div className="" key={wwoy.id}>
                 <div className="h-72 w-72 rounded-2xl">
                   <img
