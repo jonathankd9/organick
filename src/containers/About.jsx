@@ -33,8 +33,8 @@ const About = () => {
 					</div>
 					<div className="flex flex-wrap gap-10 sm:justify-center">
 						{filteredData1.map((team) => (
-							<div className="" key={team.id}>
-								<div className="h-[30.3125rem] w-[25rem]">
+							<div className="container" key={team.id}>
+								<div className="h-[30.3125rem]">
 									<img
 										className="h-full w-full object-cover rounded-t-3xl"
 										src={team.image}

@@ -38,8 +38,8 @@ const Team = () => {
 					</div>
 					<div className="flex flex-wrap gap-10 sm:justify-center">
 						{filteredData1.map((team) => (
-							<div className="" key={team.id}>
-								<div className="h-[30.3125rem] w-[25rem]">
+							<div className="container w-[28.125rem]" key={team.id}>
+								<div className="h-[30.3125rem]  ">
 									<img
 										className="h-full w-full object-cover rounded-t-3xl"
 										src={team.image}
@@ -59,8 +59,8 @@ const Team = () => {
 					{/* Next set */}
 					<div className="flex flex-wrap gap-10 sm:justify-center mt-10">
 						{filteredData2.map((team) => (
-							<div className="" key={team.id}>
-								<div className="h-[30.3125rem] w-[25rem]">
+							<div className="container w-[28.125rem]" key={team.id}>
+								<div className="h-[30.3125rem]">
 									<img
 										className="h-full w-full object-cover rounded-t-3xl"
 										src={team.image}
