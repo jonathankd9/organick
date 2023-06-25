@@ -31,12 +31,12 @@ const About = () => {
 							the 1500s, when an unknown printer took a galley.
 						</p>
 					</div>
-					<div className="flex flex-wrap gap-10 sm:justify-center">
+					<div className="flex flex-wrap gap-8 sm:justify-center">
 						{filteredData1.map((team) => (
-							<div className="container" key={team.id}>
+							<div className="container md:flex-1" key={team.id}>
 								<div className="h-[30.3125rem]">
 									<img
-										className="h-full w-full object-cover rounded-t-3xl"
+										className="h-full w-[26rem] object-cover rounded-t-3xl"
 										src={team.image}
 										alt=""
 									/>
