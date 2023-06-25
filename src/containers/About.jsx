@@ -27,7 +27,7 @@ const About = () => {
 
 			{/* We do creative stuff */}
 			<div className="md:py-[5rem] sm:py-[5rem] ">
-				<div className="container flex sm:flex-col gap-16 justify-center items-center mb-20">
+				<div className="container flex md:flex-row sm:flex-col gap-10 items-center mb-20">
 					<div className="flex-1">
 						<img className="rounded-2xl" src={Aboutus} alt="" />
 					</div>
@@ -45,7 +45,7 @@ const About = () => {
 						</p>
 
 						<div className="mb-16">
-							<div className="flex sm:flex-col sm:gap-5">
+							<div className="flex md:flex-row sm:flex-col sm:gap-5">
 								<div className="flex flex-1 gap-5 items-center">
 									<img
 										className="w-[2.875rem] h-[2.875rem]"
