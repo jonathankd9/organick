@@ -78,7 +78,7 @@ const About = () => {
 
 			{/* Why choose us */}
 			<div className="bg-pastel md:py-[10rem] sm:py-[5rem] ">
-				<div className="container flex flex-wrap justify-center items-center mb-20">
+				<div className="container flex flex-wrap md:gap-20 justify-center items-center mb-20">
 					<div className="flex-1">
 						<p className="tail text-white">Why Choose us?</p>
 						<h2 className="mb-5">
