@@ -98,7 +98,7 @@ const About = () => {
 										100% Natural Product
 									</p>
 								</div>
-								<div className="ml-16 w-[444px] text-gray-600 text-[18px] font-normal leading-7">
+								<div className="ml-16 text-gray-600 text-[18px] font-normal leading-7">
 									Simply dummy text of the printing and typesetting industry
 									Lorem Ipsum
 								</div>
@@ -110,7 +110,7 @@ const About = () => {
 										Increases resistance
 									</p>
 								</div>
-								<div className="ml-16 w-[444px] text-gray-600 text-[18px] font-normal leading-7">
+								<div className="ml-16 text-gray-600 text-[18px] font-normal leading-7">
 									Filling, and temptingly healthy, our Biona Organic Granola
 									with Wild Berries is just the thing
 								</div>
