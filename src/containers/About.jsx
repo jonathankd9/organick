@@ -1,12 +1,12 @@
 import React from "react";
-import { Navbar, Header, Footer, Newsletter } from "./../components";
-import { WwoyData } from "./../components/data/WwoyData";
-import { TeamData } from "./../components/data/TeamData";
-import { WcuData } from "./../components/data/WcuData";
+import {Navbar, Header, Footer, Newsletter} from "./../components";
+import {WwoyData} from "./../components/data/WwoyData";
+import {TeamData} from "./../components/data/TeamData";
+import {WcuData} from "./../components/data/WcuData";
 import AboutBanner from "./../assets/header/aboutus.png";
 import WhyChoose from "./../assets/about/why-choose.jpeg";
 import Aboutus from "./../assets/about/about.png";
-import Icon from "./../assets/about/icon.svg";
+import Icon from "./../assets/about/Icon.svg";
 import Modern from "./../assets/about/modern.svg";
 import Growth from "./../assets/about/no-growth.svg";
 
@@ -104,7 +104,7 @@ const About = () => {
 								</div>
 							</div>
 							<div className="">
-								<div className="bg-gray-200 flex gap-2 w-[339px] h-[81px] pl-[27px] py-[29px] bg-gray-200 rounded-[49px] mb-4">
+								<div className="bg-gray-200 flex gap-2 w-[339px] h-[81px] pl-[27px] py-[29px]  rounded-[49px] mb-4">
 									<img src={Icon} alt="" />
 									<p className="text-slate-700 text-[20px] font-medium">
 										Increases resistance
@@ -126,8 +126,7 @@ const About = () => {
 					{WcuData.map((wcu) => (
 						<div
 							className="flex flex-col items-center justify-center text-center w-[270px] h-[335px] bg-white rounded-[30px]"
-							key={wcu.id}
-						>
+							key={wcu.id}>
 							<div className="flex justify-center w-[95px] h-[95px] bg-stone-50 rounded-2xl">
 								<img className="" src={wcu.image} alt="" />
 							</div>
