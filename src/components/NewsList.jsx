@@ -1,11 +1,12 @@
 import React from "react";
-import {NewsData} from "./../components/data/NewsData";
+import {NewsData} from "./data/NewsData";
+import Profile from "../assets/news/profile-green.svg";
 
-const News = () => {
+const NewsList = () => {
 	return (
 		<div className="">
 			{/* Background image */}
-			<div className="md:grid md:grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 md:py-20 sm:py-10 rounded-2xl">
+			<div className="container md:grid md:grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 md:py-20 sm:py-10 rounded-2xl">
 				{NewsData.map((news) => (
 					<div className="container relative" key={news.id}>
 						<div className="h-[32.75rem]">
@@ -18,7 +19,7 @@ const News = () => {
 						{/* Card */}
 						<div className="md:-mt-40 sm: -mt-56">
 							<div className="bg-[#ffffff] md:mx-8 sm:mx-4 rounded-3xl p-8 shadow-lg relative z-10">
-								<div className="flex flex-row gap-5 items-center">
+								<div className="flex flex-row gap-5 items-center mb-2">
 									<img src={Profile} alt="" />
 									<p className="text-[18px]">By {news.author}</p>
 								</div>
@@ -26,11 +27,9 @@ const News = () => {
 									{news.title}
 								</p>
 								<p className="mb-2">{news.meta}</p>
-								<button
-									href=""
-									className={`text-[20px] font-roboto font-bold ${props.buttonColor}`}>
+								<a href="" className="text-[20px] font-roboto font-bold">
 									Read more
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -40,4 +39,4 @@ const News = () => {
 	);
 };
 
-export default News;
+export default NewsList;

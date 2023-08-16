@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, Footer, Newsletter, News} from "./../components";
+import {Navbar, Footer, Newsletter} from "./../components";
 import {NewsData} from "./../components/data/NewsData";
 import Profile from "../assets/news/profile-yellow.svg";
 
