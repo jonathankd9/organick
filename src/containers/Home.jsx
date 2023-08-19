@@ -10,15 +10,32 @@ const Home = () => {
 		}
 	});
 	return (
-		<div className="container">
+		<div className="">
 			{/* Navbar */}
 			<Navbar />
-			<div className="container">
-				<h1>Hello World</h1>
+
+			{/* Hero section */}
+
+			<div className=" flex bg-cover h-[56rem] bg-[url('/src/assets/home/home-background.jpg')]">
+				<div className="container flex-col flex-1">
+					<p className="font-tail text-[36px] text-[#68A47F]">
+						100% Natural Food
+					</p>
+					<p className="font-roboto font-extrabold text-[70px] text-primary basis-1/2">
+						Choose the best healthier way of life
+					</p>
+					<button
+						href=""
+						className="text-[20px] font-roboto font-bold bg-accent text-primary">
+						Read more
+					</button>
+				</div>
+
+				<div className="flex-1"></div>
 			</div>
 
 			{/* News section */}
-			<div className="sm:my-[2rem] md:my-[2rem] flex-col items-center justify-center">
+			<div className="container sm:my-[2rem] md:my-[2rem] flex-col items-center justify-center">
 				<div>
 					<p className="font-extrabold font-tail text-[36px] text-secondary">
 						News
@@ -38,9 +55,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			{/* News section */}
-
-			<div className="md:grid md:grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 rounded-2xl">
+			<div className="container md:grid md:grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 rounded-2xl">
 				{NewsFiltered.map((news) => (
 					<div className="container relative" key={news.id}>
 						<div className="h-[32.75rem]">
