@@ -2,6 +2,7 @@ import React from "react";
 import {Navbar, Footer, Newsletter} from "./../components";
 import {NewsData} from "./../components/data/NewsData";
 import Profile from "../assets/news/profile-yellow.svg";
+import HomeAbout from "../../src/assets/home/home-about.png";
 
 const Home = () => {
 	const NewsFiltered = NewsData.filter((news) => {
@@ -62,8 +63,56 @@ const Home = () => {
 				</div>
 			</div>
 
+			{/* About us */}
+			<div className="md:py-[10rem] sm:py-[5rem] bg-pastel ">
+				<div className="container flex md:flex-row sm:flex-col gap-10 items-center mb-20">
+					<div className="flex-1">
+						<img className="rounded-2xl" src={HomeAbout} alt="" />
+					</div>
+
+					<div className="flex-1">
+						<p className="tail text-white">About Us</p>
+						<h2 className="mb-5">We Believe in Working Accredited Farmers </h2>
+						<p className="mb-10">
+							Simply dummy text of the printing and typesetting industry. Lorem
+							had ceased to been the industry's standard dummy text ever since
+							the 1500s, when an unknown printer took a galley.
+						</p>
+
+						<div className="mb-16">
+							<div className="flex md:flex-row sm:flex-col sm:gap-5">
+								<div className="flex flex-1 gap-5 items-center">
+									{/* <img
+										className="w-[2.875rem] h-[2.875rem]"
+										src={Modern}
+										alt=""
+									/> */}
+									<p className="text-slate-700 text-[25px] font-medium">
+										Modern Agriculture
+										<br />
+										Equipment
+									</p>
+								</div>
+								<div className="flex flex-1 gap-5 items-center ">
+									{/* <img
+										className="w-[2.875rem] h-[2.875rem]"
+										src={Growth}
+										alt=""
+									/> */}
+									<p className="text-slate-700 text-[25px] font-medium">
+										No growth <br /> hormones are used
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<button>Show More</button>
+					</div>
+				</div>
+			</div>
+
 			{/* News section */}
-			<div className="container sm:my-[2rem] md:my-[2rem] flex-col items-center justify-center">
+			<div className="container sm:my-[2rem] md:my-[5rem] flex-col items-center justify-center">
 				<div>
 					<p className="font-extrabold font-tail text-[36px] text-secondary">
 						News
