@@ -16,22 +16,50 @@ const Home = () => {
 
 			{/* Hero section */}
 
-			<div className=" flex bg-cover h-[56rem] bg-[url('/src/assets/home/home-background.jpg')]">
-				<div className="container flex-col flex-1">
-					<p className="font-tail text-[36px] text-[#68A47F]">
-						100% Natural Food
-					</p>
-					<p className="font-roboto font-extrabold text-[70px] text-primary basis-1/2">
-						Choose the best healthier way of life
-					</p>
-					<button
-						href=""
-						className="text-[20px] font-roboto font-bold bg-accent text-primary">
-						Read more
-					</button>
+			<div className="bg-[url('/src/assets/home/home-background.jpg')] md:bg-cover sm:bg-cover">
+				<div className="container flex justify-center items-center md:h-[56rem] sm:h-[36rem] ">
+					<div className="md:flex-1 flex-col ">
+						<p className="font-tail text-[36px] text-[#68A47F]">
+							100% Natural Food
+						</p>
+						<p className="font-roboto font-extrabold md:text-[72px] sm:text-[3rem] text-primary basis-1/2">
+							Choose the best healthier way of life
+						</p>
+						<button
+							href=""
+							className="text-[20px] font-roboto font-bold bg-accent text-primary">
+							Explore Now
+						</button>
+					</div>
+					<div className="flex-1"></div>
 				</div>
+			</div>
 
-				<div className="flex-1"></div>
+			{/* Category seection */}
+			<div className="container flex sm:my-[5rem] md:flex-row sm:flex-col md:my-[10rem] gap-10 ">
+				<div className="flex-1">
+					<div className="bg-[url('/src/assets/home/getfreshfruits.jpg')] md:bg-cover sm:bg-contain h-[22rem] md:p-20 sm:p-5 flex items-center rounded-3xl">
+						<div className="flex flex-col">
+							<p className="font-tail text-[2.2rem] text-white">Natural!!</p>
+							<p className="sm:hidden md:flex font-roboto text-[2.5rem] font-bold text-white">
+								Get Garden <br /> Fresh Fruits
+							</p>
+							<p className="md:hidden font-roboto text-[2rem] font-bold text-white">
+								Get Garden Fresh Fruits
+							</p>
+						</div>
+					</div>
+				</div>
+				<div className="flex-1">
+					<div className="bg-[url('/src/assets/home/getvegetables.jpg')] md:bg-cover sm:bg-contain h-[22rem] md:p-20 sm:p-5 flex items-center rounded-3xl">
+						<div className="flex flex-col">
+							<p className="font-tail text-[2.2rem] text-primary">Offer!!</p>
+							<p className="font-roboto text-[2.5rem] font-bold text-primary">
+								Get 10% off <br /> on Vegetables
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			{/* News section */}
