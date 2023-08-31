@@ -17,7 +17,7 @@ const Home = () => {
 
 			{/* Hero section */}
 
-			<div className="bg-[url('/src/assets/home/home-background.jpg')] md:bg-cover sm:bg-cover">
+			<div className="bg-[url('/src/assets/home/homebackground.jpg')] md:bg-cover sm:bg-cover">
 				<div className="container flex justify-center items-center md:h-[56rem] sm:h-[36rem] ">
 					<div className="md:flex-1 flex-col ">
 						<p className="font-tail text-[36px] text-[#68A47F]">

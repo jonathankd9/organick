@@ -10,6 +10,13 @@ const Shop = () => {
 
 			{/* Header */}
 			<Header name="Shop" image={ShopBanner} />
+
+			{/* Product List using maps */}
+			<div className="">
+
+				
+			</div>
+
 			{/* Subscribe to our newsletter */}
 			<Newsletter />
 			{/* Footer */}
