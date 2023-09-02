@@ -18,7 +18,7 @@ const Shop = () => {
 				<div className="md:grid md:grid-cols-4 sm:flex sm:flex-wrap justify-center gap-5">
 					{ShopData.map((product) => (
 						<div
-							className="bg-[#DEDDDD] sm:w-full gap-5 py-10 px-5 flex flex-col rounded-xl "
+							className="bg-[#eeeeee] sm:w-full gap-5 py-10 px-5 flex flex-col rounded-xl "
 							key={product.id}>
 							{/* Tag */}
 							<div className="bg-primary w-fit py-2 px-4 rounded-xl">
@@ -34,7 +34,7 @@ const Shop = () => {
 								<p className="mb-2 font-roboto text-xl font-semibold text-primary">
 									{product.name}
 								</p>
-								<hr className="border border-primary" style={{color: "red"}} />
+								<hr className="border border-[#DEDDDD]" />
 
 								<div className="flex justify-between items-center mt-2">
 									<div className="flex gap-3  items-center">
