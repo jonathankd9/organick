@@ -6,6 +6,7 @@ import Profile from "../assets/news/profile-yellow.svg";
 import HomeAbout from "../../src/assets/home/home-about.png";
 import Ecofriendly from "../assets/home/eco-friendly.jpg";
 import Star from "../assets/shop/Star.png";
+import Sara from "../assets/home/sara taylor.jpg";
 
 const Home = () => {
 	const NewsFiltered = NewsData.filter((news) => {
@@ -114,12 +115,87 @@ const Home = () => {
 				</div>
 			</div>
 
+			{/* Testimonial */}
+			<div className="md:my-0 sm:my-20">
+				<div className="md:bg-[url('/src/assets/home/customer-saying.png')] md:min-h-screen flex flex-col justify-center items-center">
+					<div className="mb-10">
+						<p className="font-tail text-center text-4xl text-secondary">
+							Testimonial
+						</p>
+						<h2 className="sm:text-center">What Our Customer Saying?</h2>
+					</div>
+					{/* Image and rating */}
+					<div className="flex flex-col  items-center mb-10">
+						<img src={Sara} className="rounded-full " alt="" />
+						<img src={Star} alt="" />
+					</div>
+					{/* Testimonial */}
+					<div className="flex flex-col items-center">
+						<p className="text-center mb-5">
+							Simply dummy text of the printing and typesetting industry. Lorem
+							Ipsum simply dummy <br /> text of the printing and typesetting
+							industry. Lorem Ipsum has been.
+						</p>
+						<p className="font-roboto font-semibold text-2xl text-primary">
+							Sara Taylor
+						</p>
+						<p>Consumer</p>
+					</div>
+
+					<hr className="my-16 border w-[60%] border-[#E0E0E0]" />
+
+					{/* Four Circles  */}
+					<div className="md:flex md:flex-row sm:grid sm:grid-cols-2 md:gap-10 sm:gap-1">
+						<div className="rounded-full border-4 border-secondary text-center">
+							<div className="rounded-full border-none bg-[#F1F1F1] m-1 w-40 h-40 flex flex-col justify-center">
+								<p className="font-roboto text-4xl font-extrabold text-primary">
+									100%
+								</p>
+								<p>Organic</p>
+							</div>
+						</div>
+
+						<div className="rounded-full border-4 border-secondary text-center">
+							<div className="rounded-full border-none bg-[#F1F1F1] m-1 w-40 h-40 flex flex-col justify-center">
+								<p className="font-roboto text-4xl font-extrabold text-primary">
+									286
+								</p>
+								<p>Active Product</p>
+							</div>
+						</div>
+						<div className="rounded-full border-4 border-secondary text-center">
+							<div className="rounded-full border-none bg-[#F1F1F1] m-1 w-40 h-40 flex flex-col justify-center">
+								<p className="font-roboto text-4xl font-extrabold text-primary">
+									350+
+								</p>
+								<p>Organic Orchads</p>
+							</div>
+						</div>
+						<div className="rounded-full border-4 border-secondary text-center">
+							<div className="rounded-full border-none bg-[#F1F1F1] m-1 w-40 h-40 flex flex-col justify-center">
+								<p className="font-roboto text-4xl font-extrabold text-primary">
+									25+
+								</p>
+								<p>Years of Farming</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* The offer products */}
 			<div className="bg-primary">
 				<div className="container py-40">
 					<div className="mb-10">
 						<p className="font-tail text-4xl text-secondary mb-5">Offer</p>
-						<h2 className="text-white">We Offer Organic For You</h2>
+						<div className="md:flex md:justify-between">
+							<h2 className="text-white">We Offer Organic For You</h2>
+							<button
+								href=""
+								className="text-[20px] font-roboto font-bold bg-accent text-primary">
+								View All Product
+							</button>
+						</div>
 					</div>
 
 					{/* Product list */}
