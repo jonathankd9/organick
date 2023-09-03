@@ -1,8 +1,11 @@
 import React from "react";
 import {Navbar, Footer, Newsletter} from "./../components";
 import {NewsData} from "./../components/data/NewsData";
+import {HomeProductData} from "./../components/data/HomeProductData";
 import Profile from "../assets/news/profile-yellow.svg";
 import HomeAbout from "../../src/assets/home/home-about.png";
+import Ecofriendly from "../assets/home/eco-friendly.jpg";
+import Star from "../assets/shop/Star.png";
 
 const Home = () => {
 	const NewsFiltered = NewsData.filter((news) => {
@@ -36,7 +39,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			{/* Category seection */}
+			{/* Category section */}
 			<div className="container flex sm:my-[5rem] md:flex-row sm:flex-col md:my-[10rem] gap-10 ">
 				<div className="flex-1">
 					<div className="bg-[url('/src/assets/home/getfreshfruits.jpg')] md:bg-cover sm:bg-contain h-[22rem] md:p-20 sm:p-5 flex items-center rounded-3xl">
@@ -108,6 +111,129 @@ const Home = () => {
 
 						<button>Show More</button>
 					</div>
+				</div>
+			</div>
+
+			{/* The offer products */}
+			<div className="bg-primary">
+				<div className="container py-40">
+					<div className="mb-10">
+						<p className="font-tail text-4xl text-secondary mb-5">Offer</p>
+						<h2 className="text-white">We Offer Organic For You</h2>
+					</div>
+
+					{/* Product list */}
+					<div className="md:grid md:grid-cols-4 sm:flex sm:flex-wrap justify-center gap-5">
+						{HomeProductData.map((product) => (
+							<div
+								className="bg-white sm:w-full gap-5 py-10 px-5 flex flex-col rounded-2xl "
+								key={product.id}>
+								{/* Tag */}
+								<div className="bg-primary w-fit py-2 px-4 rounded-xl">
+									<p className="text-white font-open font-semibold text-[15px]">
+										{product.tag}
+									</p>
+								</div>
+								<div className="">
+									<img className="w-full h-72" src={product.image} alt="" />
+								</div>
+								{/* Product name and stars */}
+								<div className="">
+									<p className="mb-2 font-roboto text-xl font-semibold text-primary">
+										{product.name}
+									</p>
+									<hr className="border border-[#DEDDDD]" />
+
+									<div className="flex justify-between items-center mt-2">
+										<div className="flex gap-3  items-center">
+											<p className="text-[#B8B8B8] text-base line-through">
+												${product.initialprice}
+											</p>
+											<p className="font-open font-bold text-lg text-primary">
+												${product.sellingprice}{" "}
+											</p>
+										</div>
+										<div className="">
+											<img src={Star} className="" alt="" />
+										</div>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+
+			{/* Ecofriendly section */}
+			<div className="flex md:flex-row sm:flex-col sm:gap-10 justify-center items-center">
+				<div className="basis-1/2 w-full h-fit">
+					<img
+						src={Ecofriendly}
+						className="object-contain w-full h-full"
+						alt=""
+					/>
+				</div>
+				<div className="basis-1/2 flex">
+					<div className="bg-white md:-ml-32 md:p-20 sm:p-10 md:mr-48 rounded-3xl">
+						<div className="">
+							<p className="font-tail text-4xl text-secondary">Eco Friendly</p>
+							<h2 className="mb-10 md:flex sm:hidden">
+								Econis is a Friendly <br /> Organic Store
+							</h2>
+							<h2 className="text-[48px] mb-10 md:hidden">
+								Econis is a Friendly <br /> Organic Store
+							</h2>
+						</div>
+
+						<div className="mb-5">
+							<p className="font-robot font-medium text-2xl text-primary">
+								Start with Our Company First
+							</p>
+							<p className="font-open font-normal text-lg text-metallic">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptat
+								accusantium doloremque laudantium. Sed ut perspiciatis.
+							</p>
+						</div>
+
+						<div className="mb-5">
+							<p className="font-robot font-medium text-2xl text-primary">
+								Learn How To Grow Yourself
+							</p>
+							<p>
+								Sed ut perspiciatis unde omnis iste natus error sit voluptat
+								accusantium doloremque laudantium. Sed ut perspiciatis.
+							</p>
+						</div>
+
+						<div className="mb-5">
+							<p className="font-robot font-medium text-2xl text-primary">
+								Farming Strategies of Today
+							</p>
+							<p>
+								Sed ut perspiciatis unde omnis iste natus error sit voluptat
+								accusantium doloremque laudantium. Sed ut perspiciatis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* Three photo section  */}
+			<div className="bg-[#F1F8F4] md:py-40 sm:py-16 md:flex md:flex-wrap justify-center gap-10 items-center">
+				<div className="sm:mb-10 bg-[url('/src/assets/home/organic-juice.jpg')] md:w-[37rem] md:h-[36rem] sm:w-full sm:h-[36rem] flex justify-center items-center">
+					<p className="bg-white px-8 py-4 rounded-lg font-roboto font-medium text-2xl">
+						Organic Juice
+					</p>
+				</div>
+				<div className="sm:mb-10 bg-[url('/src/assets/home/organic-food.jpg')] md:w-[37rem] md:h-[36rem] sm:w-full sm:h-[36rem] flex justify-center items-center">
+					<p className="bg-white px-8 py-4 rounded-lg font-roboto font-medium text-2xl">
+						Organic Food
+					</p>
+				</div>
+				<div className="sm:mb-10 bg-[url('/src/assets/home/nuts-cookies.jpg')] md:w-[37rem] md:h-[36rem] sm:w-full sm:h-[36rem] flex justify-center items-center ">
+					<p className="bg-white px-8 py-4 rounded-lg font-roboto font-medium text-2xl">
+						Nuts Cookies
+					</p>
 				</div>
 			</div>
 
