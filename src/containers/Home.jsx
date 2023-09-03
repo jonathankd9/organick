@@ -7,6 +7,7 @@ import HomeAbout from "../../src/assets/home/home-about.png";
 import Ecofriendly from "../assets/home/eco-friendly.jpg";
 import Star from "../assets/shop/Star.png";
 import Sara from "../assets/home/sara taylor.jpg";
+import {ShopData} from "../components/data/ShopData";
 
 const Home = () => {
 	const NewsFiltered = NewsData.filter((news) => {
@@ -14,6 +15,13 @@ const Home = () => {
 			return true;
 		}
 	});
+
+	const ProductsFiltered = ShopData.filter((product) => {
+		if (product.id <= 8) {
+			return true;
+		}
+	});
+
 	return (
 		<div className="">
 			{/* Navbar */}
@@ -112,6 +120,58 @@ const Home = () => {
 
 						<button>Show More</button>
 					</div>
+				</div>
+			</div>
+
+			{/* Categories */}
+			<div className="container py-16 flex flex-col items-center">
+				<div className="text-center sm:my-5">
+					<p className="font-tail text-4xl text-secondary">Categories</p>
+					<h2 className="">Our Products</h2>
+				</div>
+				{/* Product list */}
+
+				<div className="md:my-12 md:grid md:grid-cols-4 sm:flex sm:flex-wrap justify-center gap-5">
+					{ProductsFiltered.map((product) => (
+						<div
+							className="bg-[#eeeeee] sm:w-full gap-5 py-10 px-5 flex flex-col rounded-xl "
+							key={product.id}>
+							{/* Tag */}
+							<div className="bg-primary w-fit py-2 px-4 rounded-xl">
+								<p className="text-white font-open font-semibold text-[15px]">
+									{product.tag}
+								</p>
+							</div>
+							<div className="">
+								<img className="w-full h-60" src={product.image} alt="" />
+							</div>
+							{/* Product name and stars */}
+							<div className="">
+								<p className="mb-2 font-roboto text-xl font-semibold text-primary">
+									{product.name}
+								</p>
+								<hr className="border border-[#DEDDDD]" />
+
+								<div className="flex justify-between items-center mt-2">
+									<div className="flex gap-3  items-center">
+										<p className="text-[#B8B8B8] text-base line-through">
+											${product.initialprice}
+										</p>
+										<p className="font-open font-bold text-lg text-primary">
+											${product.sellingprice}{" "}
+										</p>
+									</div>
+									<div className="">
+										<img src={Star} className="" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+
+				<div className="sm:my-5">
+					<button>Load More</button>
 				</div>
 			</div>
 
