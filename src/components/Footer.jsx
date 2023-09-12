@@ -33,7 +33,7 @@ const Footer = () => {
 						<img className="md:mb-3 sm:object-scale-down" src={Logo} alt="" />
 						<p className="text-center">
 							Simply dummy text of the printing and typesetting industry. Lorem
-							Ipsum simply dummy text of the printing{" "}
+							Ipsum simply dummy text of the printing
 						</p>
 						{/* Social media logos */}
 						<div className="flex gap-2 py-4 justify-center">
@@ -48,8 +48,7 @@ const Footer = () => {
 									display: "flex",
 									justifyContent: "center",
 									alignItems: "center",
-								}}
-							>
+								}}>
 								<InstagramIcon />
 							</div>
 							<div
@@ -63,8 +62,7 @@ const Footer = () => {
 									display: "flex",
 									justifyContent: "center",
 									alignItems: "center",
-								}}
-							>
+								}}>
 								<FacebookOutlinedIcon />
 							</div>
 							<div
@@ -78,8 +76,7 @@ const Footer = () => {
 									display: "flex",
 									justifyContent: "center",
 									alignItems: "center",
-								}}
-							>
+								}}>
 								<TwitterIcon />
 							</div>
 							<div
@@ -93,8 +90,7 @@ const Footer = () => {
 									display: "flex",
 									justifyContent: "center",
 									alignItems: "center",
-								}}
-							>
+								}}>
 								<PinterestIcon />
 							</div>
 						</div>
