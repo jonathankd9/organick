@@ -4,7 +4,7 @@ import {NewsData} from "./../components/data/NewsData";
 import {HomeProductData} from "./../components/data/HomeProductData";
 import Profile from "../assets/news/profile-yellow.svg";
 import HomeAbout from "../../src/assets/home/home-about.png";
-import Ecofriendly from "../assets/home/eco-friendly.jpg";
+import Ecofriendly from "../assets/home/products/eco-friendly.jpg";
 import Star from "../assets/shop/Star.png";
 import Sara from "../assets/home/sara taylor.jpg";
 import {ShopData} from "../components/data/ShopData";
