@@ -18,7 +18,7 @@ const Contact = () => {
 			<Header name="Contact" image={ContactBanner} />
 
 			{/* We'd love to talk */}
-			<div className="md:py-[5rem] sm:py-[5rem]">
+			<div className="sm:py-[5rem] py-[5rem]">
 				<div className="container flex gap-20">
 					{/* image */}
 

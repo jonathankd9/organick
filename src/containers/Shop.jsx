@@ -15,7 +15,7 @@ const Shop = () => {
 
 			{/* Product List using maps */}
 			<div className="container my-20">
-				<div className="md:grid md:grid-cols-4 sm:flex sm:flex-wrap justify-center gap-5">
+				<div className="sm:grid sm:grid-cols-4 flex flex-wrap justify-center gap-5">
 					{ShopData.map((product) => (
 						<div
 							className="bg-[#eeeeee] sm:w-full gap-5 py-10 px-5 flex flex-col rounded-xl "

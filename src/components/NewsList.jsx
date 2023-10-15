@@ -6,7 +6,7 @@ const NewsList = () => {
 	return (
 		<div className="">
 			{/* Background image */}
-			<div className="container md:grid md:grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-center gap-10 md:py-20 sm:py-10 rounded-2xl">
+			<div className="container sm:grid sm:grid-cols-2 flex flex-col items-center justify-center gap-10 sm:py-20 py-10 rounded-2xl">
 				{NewsData.map((news) => (
 					<div className="container relative" key={news.id}>
 						<div className="h-[32.75rem]">
@@ -17,8 +17,8 @@ const NewsList = () => {
 							/>
 						</div>
 						{/* Card */}
-						<div className="md:-mt-40 sm: -mt-56">
-							<div className="bg-[#ffffff] md:mx-8 sm:mx-4 rounded-3xl p-8 shadow-lg relative z-10">
+						<div className="sm:-mt-40 -mt-56">
+							<div className="bg-[#ffffff] sm:mx-8 mx-4 rounded-3xl p-8 shadow-lg relative z-10">
 								<div className="flex flex-row gap-5 items-center mb-2">
 									<img src={Profile} alt="" />
 									<p className="text-[18px]">By {news.author}</p>

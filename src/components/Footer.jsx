@@ -8,10 +8,10 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 const Footer = () => {
 	return (
 		<div className="">
-			<div className="container sm:w-full sm:px-0">
-				<div className="md:grid md:grid-cols-3 md:pb-20 md:divide-x md:divide-y-0 sm:flex sm:flex-col sm:divide-y sm:divide-x-0 sm:text-center ">
+			<div className="container w-full px-0">
+				<div className="sm:grid sm:grid-cols-3 sm:pb-20 sm:divide-x sm:divide-y-0 flex flex-col divide-y divide-x-0 text-center ">
 					{/* Contact us */}
-					<div className="md:text-right md:pr-10 sm:px-0 ">
+					<div className="sm:text-right sm:pr-10 px-0 ">
 						<h3 className="mb-2">Contact Us</h3>
 						{/* Email */}
 						<div className="mb-5">
@@ -29,8 +29,8 @@ const Footer = () => {
 						</div>
 					</div>
 					{/* Logo Section */}
-					<div className="md:flex md:flex-col md:items-center md:px-5 sm:flex sm:flex-col sm:justify-center">
-						<img className="md:mb-3 sm:object-scale-down" src={Logo} alt="" />
+					<div className="sm:flex sm:flex-col sm:items-center sm:px-5 flex flex-col justify-center">
+						<img className="sm:mb-3 object-scale-down" src={Logo} alt="" />
 						<p className="text-center">
 							Simply dummy text of the printing and typesetting industry. Lorem
 							Ipsum simply dummy text of the printing
@@ -98,21 +98,21 @@ const Footer = () => {
 
 					{/* Utility pages */}
 					<div className="px-10">
-						<h3 className="md:mb-2 md:text-left">Utility Pages</h3>
-						<div className=" md:flex md:flex-col ">
-							<div className="mb-5 md:text-left sm:text-[18px]">
+						<h3 className="sm:mb-2 sm:text-left text-center">Utility Pages</h3>
+						<div className="sm:flex sm:flex-col ">
+							<div className="mb-5 sm:text-left text-[18px]">
 								<a href="">Style Guide</a>
 							</div>
-							<div className="mb-5 md:text-left sm:text-[18px]">
+							<div className="mb-5 sm:text-left text-[18px]">
 								<a href="">404 Not Found</a>
 							</div>
-							<div className="mb-5 md:text-left sm:text-[18px]">
+							<div className="mb-5 sm:text-left text-[18px]">
 								<a href="">Password Protected</a>
 							</div>
-							<div className="mb-5 md:text-left sm:text-[18px]">
+							<div className="mb-5 sm:text-left text-[18px]">
 								<a href="">Licenses</a>
 							</div>
-							<div className="mb-5 md:text-left sm:text-[18px]">
+							<div className="mb-5 sm:text-left text-[18px]">
 								<a href="">Changelog</a>
 							</div>
 						</div>

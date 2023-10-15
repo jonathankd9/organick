@@ -26,8 +26,8 @@ const About = () => {
 			<Header name="About us" image={AboutBanner} />
 
 			{/* We do creative stuff */}
-			<div className="md:py-[5rem] sm:py-[5rem] ">
-				<div className="container flex md:flex-row sm:flex-col gap-10 items-center mb-20">
+			<div className="sm:py-[5rem] py-[5rem] ">
+				<div className="container flex sm:flex-row flex-col gap-10 items-center mb-20">
 					<div className="flex-1">
 						<img className="rounded-2xl" src={Aboutus} alt="" />
 					</div>
@@ -45,7 +45,7 @@ const About = () => {
 						</p>
 
 						<div className="mb-16">
-							<div className="flex md:flex-row sm:flex-col sm:gap-5">
+							<div className="flex sm:flex-row flex-col gap-5">
 								<div className="flex flex-1 gap-5 items-center">
 									<img
 										className="w-[2.875rem] h-[2.875rem]"
@@ -77,8 +77,8 @@ const About = () => {
 			</div>
 
 			{/* Why choose us */}
-			<div className="bg-pastel md:py-[10rem] sm:py-[5rem] ">
-				<div className="container flex flex-wrap md:gap-20 justify-center items-center mb-20">
+			<div className="bg-pastel sm:py-[10rem] py-[5rem] ">
+				<div className="container flex flex-wrap sm:gap-20 justify-center items-center mb-20">
 					<div className="flex-1">
 						<p className="tail text-white">Why Choose us?</p>
 						<h2 className="mb-5">
@@ -90,9 +90,9 @@ const About = () => {
 							unknown
 						</p>
 
-						<div className="sm:mb-10">
+						<div className="mb-10">
 							<div className="mb-5">
-								<div className="bg-gray-200 flex gap-2 w-[339px] h-[81px] pl-[27px]  py-[29px] bg-gray-200 rounded-[49px] mb-4">
+								<div className="flex gap-2 w-[339px] h-[81px] pl-[27px]  py-[29px] bg-gray-200 rounded-[49px] mb-4">
 									<img src={Icon} alt="" />
 									<p className="text-slate-700 text-[20px] font-medium">
 										100% Natural Product
@@ -142,9 +142,9 @@ const About = () => {
 			</div>
 
 			{/* Team */}
-			<div className="sm:py-[5rem]">
+			<div className="py-[5rem]">
 				<div className="flex flex-col items-center ">
-					<div className="container text-center md:px-32">
+					<div className="container text-center sm:px-32">
 						<p className="tail text-white">Team</p>
 						<h2 className="mb-5">Our Organic Experts</h2>
 						<p className="mb-10">
@@ -153,9 +153,9 @@ const About = () => {
 							the 1500s, when an unknown printer took a galley.
 						</p>
 					</div>
-					<div className="flex flex-wrap gap-8 sm:justify-center">
+					<div className="flex flex-wrap gap-8 justify-center">
 						{filteredData1.map((team) => (
-							<div className="container md:flex-1" key={team.id}>
+							<div className="container sm:flex-1" key={team.id}>
 								<div className="h-[30.3125rem]">
 									<img
 										className="h-full w-[26rem] object-cover rounded-t-3xl"
@@ -176,13 +176,13 @@ const About = () => {
 			</div>
 
 			{/* What we offer for you */}
-			<div className="bg-primary md:py-[10rem] sm:py-[5rem]">
+			<div className="bg-primary sm:py-[10rem] py-[5rem]">
 				<div className="container bg-primary flex flex-col justify-center items-center ">
 					<div className="text-center">
 						<p className="tail text-white">About us</p>
 						<h2 className="text-white mb-5">What We Offer for You</h2>
 					</div>
-					<div className="flex flex-wrap gap-5 sm:justify-center">
+					<div className="flex flex-wrap gap-5 justify-center">
 						{WwoyData.map((wwoy) => (
 							<div className="" key={wwoy.id}>
 								<div className="h-72 w-72 rounded-2xl">

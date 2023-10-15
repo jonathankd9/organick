@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar, Header, Footer, Newsletter } from "./../components";
+import {Navbar, Header, Footer, Newsletter} from "./../components";
 import TeamBanner from "./../assets/header/teambanner.jpg";
-import { TeamData } from "./../components/data/TeamData";
+import {TeamData} from "./../components/data/TeamData";
 
 const Team = () => {
 	const filteredData1 = TeamData.filter((team) => {
@@ -25,9 +25,9 @@ const Team = () => {
 			<Header name="Our Team" image={TeamBanner} />
 
 			{/* Our Organic experts */}
-			<div className="sm:py-[5rem]">
+			<div className="py-[5rem]">
 				<div className="flex flex-col items-center ">
-					<div className="container text-center md:px-32">
+					<div className="container text-center sm:px-32">
 						<p className="tail text-white">Team</p>
 						<h2 className="mb-5">Our Organic Experts</h2>
 						<p className="mb-10">
@@ -36,7 +36,7 @@ const Team = () => {
 							the 1500s, when an unknown printer took a galley.
 						</p>
 					</div>
-					<div className="flex flex-wrap gap-10 sm:justify-center">
+					<div className="flex flex-wrap gap-10 justify-center">
 						{filteredData1.map((team) => (
 							<div className="container w-[28.125rem]" key={team.id}>
 								<div className="h-[30.3125rem]  ">
@@ -57,7 +57,7 @@ const Team = () => {
 					</div>
 
 					{/* Next set */}
-					<div className="flex flex-wrap gap-10 sm:justify-center mt-10">
+					<div className="flex flex-wrap gap-10 justify-center mt-10">
 						{filteredData2.map((team) => (
 							<div className="container w-[28.125rem]" key={team.id}>
 								<div className="h-[30.3125rem]">
